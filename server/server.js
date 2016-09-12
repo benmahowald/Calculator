@@ -4,10 +4,11 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var calcModule = require('../modules/calc_module');
+var portDecision = process.env.PORT || 3000;
 
 // spin server
-app.listen('8080', 'localhost', function () {
-  console.log('listening on port 8080');
+app.listen(portDecision, function () {
+  console.log('listening on port 3000');
 }); // end listen
 
 app.get('/', function (req, res) {
