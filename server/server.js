@@ -24,12 +24,11 @@ app.post('/calculation', function (req, res) {
 });
 
 app.post('/summation', urlencodedParser, function (req, res) {
-  console.log('post - log hit:', req.body);
-  res.send(req.body.num1 + ' ' + req.body.num2 + ' ' + req.body.type);
+  // console.log('post - log hit:', req.body);
   var num1 = req.body.num1;
   var num2 = req.body.num2;
-  var type = req.body.type;
-  var mathStuff = calcModule(num1, num2, type);
+  var ops = req.body.ops;
+  var mathStuff = calcModule(num1, num2, ops);
   var sendCalculation = {
     calc: mathStuff,
   };
