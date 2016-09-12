@@ -27,6 +27,7 @@ console.log(input2);
   $('.operatorClass').on('click', function () {
     // console.log('in operatorClass click');
     mathOperator = $(this).data('input-operator');
+    
   });
 
   $('#calculate').on('click', function () {

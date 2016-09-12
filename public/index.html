@@ -6,26 +6,28 @@
     <script src="scripts/jquery-3.1.0.min.js" charset="utf-8"></script>
     <script src="scripts/bootstrap.min.js" charset="utf-8"></script>
     <script src="scripts/calculator.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="scripts/bootstrap.min.js" media="screen" title="no title">
     <link rel="stylesheet" href="style/style.css" media="screen" title="no title">
   </head>
   <body>
     <h1>Calculator</h1>
-    <div id="resultOutput"></div>
-    <input id="calcDisplay" type="number" value="">
-    <button class="number" data-digit="1">1</button>
-    <button class="number" data-digit="2">2</button>
-    <button class="number" data-digit="3">3</button>
-    <button class="number" data-digit="4">4</button>
-    <button class="number" data-digit="5">5</button>
-    <button class="number" data-digit="6">6</button>
-    <button class="number" data-digit="7">7</button>
-    <button class="number" data-digit="8">8</button>
-    <button class="number" data-digit="9">9</button>
-    <button id="plus" data-input-operator="+" class="operatorClass">+</button>
-    <button id="minus" data-input-operator="-" class="operatorClass">-</button>
-    <button id="multiply" data-input-operator="*" class="operatorClass">*</button>
-    <button id="divide" data-input-operator="/" class="operatorClass">/</button>
-    <button id="calculate">=</button>
-    <button id="clear">Clear</div>
+    <div id="container">
+      <input id="calcDisplay" type="text" value=""><br>
+      <button class="number" data-digit="1">1</button>
+      <button class="number" data-digit="2">2</button>
+      <button class="number" data-digit="3">3</button>
+      <button id="plus" data-input-operator="+" class="operatorClass">+</button><br>
+      <button class="number" data-digit="4">4</button>
+      <button class="number" data-digit="5">5</button>
+      <button class="number" data-digit="6">6</button>
+      <button id="minus" data-input-operator="-" class="operatorClass">-</button><br>
+      <button class="number" data-digit="7">7</button>
+      <button class="number" data-digit="8">8</button>
+      <button class="number" data-digit="9">9</button>
+      <button id="multiply" data-input-operator="*" class="operatorClass">*</button><br>
+      <button id="divide" data-input-operator="/" class="operatorClass">/</button>
+      <button id="calculate">=</button>
+      <button id="clear">Clear</div>
+    </container>
   </body>
 </html>
